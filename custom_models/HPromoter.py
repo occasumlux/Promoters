@@ -26,7 +26,8 @@ class HPromoter(MetaModel):
                 self.models.append(load_model(path))
         else:
             for path in load_paths:
-                self.models.append(self._create_model())
+                is_first = len(self.models) == 0
+                self.models.append(self._create_model(is_first))
                 self.models[-1].load_weights(path)
     
     @staticmethod
