@@ -5,16 +5,21 @@ Implementation of *PromoterLCNN: A Light CNN-based Promoter Prediction and Class
 For convenience, this repository also contains the wrapper classes developed in order to compare with other models: [IPromoter-BnCNN](https://doi.org/10.1093/bioinformatics/btaa609) and [pcPromoter-CNN](https://www.mdpi.com/2073-4425/11/12/1529) in particular.
 
 ## Requirements
-Just run:
+Just run (ideally inside a virtual environment):
 ```bash
 # Necessary ones
-$ pip install tensorflow tensorflow-addons biopython scikit-learn numpy pandas
+$ pip install tensorflow==2.6.0 tensorflow-addons==0.14.0 biopython==1.79 scikit-learn==1.0 numpy==1.19.5 pandas==1.3.4
 # For Jupyter and table making
 $ pip install jupyterlab tabulate
 ```
 ## Weights
 
-Get them [here](https://drive.google.com/file/d/1D1XOIAUDMv04sZUIvgdfBAgL75lW8AgW/view?usp=sharing) (PromoterLCNN only) or [here](https://drive.google.com/file/d/1awsszk6905sVzetdgcQe5kOVTv4n70up/view?usp=sharing) (PromoterLCNN plus mirrors of both IPromoter-BnCNN and pcPromoter-CNN), then unzip inside ```weights``` folder.
+Get them from either
+- [Lightweight](https://drive.google.com/file/d/1D1XOIAUDMv04sZUIvgdfBAgL75lW8AgW/view?usp=sharing): PromoterLCNN only.
+
+- [Full](https://drive.google.com/file/d/1awsszk6905sVzetdgcQe5kOVTv4n70up/view?usp=sharing): PromoterLCNN plus mirrors of both IPromoter-BnCNN and pcPromoter-CNN.
+
+  Then unzip inside ```weights``` folder.
 
 ## How to use
 
