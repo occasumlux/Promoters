@@ -14,7 +14,7 @@ from tensorflow_addons.losses import SigmoidFocalCrossEntropy
 
 from .Meta import MetaModel, ModelType, PromoterType
 
-class HPromoter(MetaModel):
+class PromoterLCNN(MetaModel):
 
     def __init__(self, name: str, load_paths: List[Path], m_type: ModelType = ModelType.SAVED_MODEL):
         self.name = name
